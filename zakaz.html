@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"/>
+    
+    <!-- users stiles-->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    
+     <style>
+
+    </style>
+
+    <title>Zakaz</title>
+  </head>
+  <body>
+
+<!-- Img -->
+<header>
+
+ <div class="container-fluid">
+   <img src="img/Header.jpg" class="d-block img-fluid w-5 h-5  alt="header img">
+ </div>
+
+<!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+            <a class="navbar-brand" href="#">
+             <i class="fas fa-chess d-inline-block display-4"></i>  Chess</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Магазин          
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="literature.html">Литература</a>
+                            <a class="dropdown-item" href="#">Шахматы</a>
+                            <a class="dropdown-item" href="#">Шахматные часы</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">История </a>
+                    </li>
+                    </div>
+                    </li>
+                    </li>
+          <form >
+          <input  type="text" placeholder=" Найти" aria-label="Search">
+          <button type="submit">Поиск</button>
+          </form>
+          </ul>
+          </div>
+        </nav>
+</header>
+<!-- /Navbar -->
+
+<!-- Zagolovok-->
+<div class="row">
+    <div class="col-md-12"> 
+    <h1 >Ваш заказ</h1> 
+    </div>
+</div>
+<!-- /Zagolovok -->
+
+<!-- 2 konteynera--> 
+<div class="container">
+
+<div class="row">
+    <!-- Left konteyner Menu--> 
+    <div class="col-md-3"> 
+    <div class="d-flex flex-column">
+    <ul>
+       <li><h4>Навигация</h4></li>
+       <li><a href="index.html" class="nav_l">Главная</a></li>
+       <li><a href="history.html" class="nav_l">История шахмат</a></li>
+       <li><a href="https://chessok.net/books/" class="nav_l">Скачать книги по шахматам</a></li>
+       <li><a href="literature.html" class="nav_l">Купить книги по шахматам</a></li>
+   </ul>
+   </div>
+   </div>
+
+    <!-- Right konteyner--> 
+    <div class="col-md-9"> 
+
+     <div class="row">
+       
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Персональные данные</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName">Фамилия</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName">Имя</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="username">Логин</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">#</span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address">Адрес доставки</label>
+              <input type="text" class="form-control" id="address" placeholder="Страна. индекс, улица, дом, квартира " required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+             
+            <hr class="mb-4">
+              <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label " for="save-info">Сохранить информацию</label>
+              </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Система оплаты</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Онлайн картами Visa / MasterCard
+                </label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Наличными</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">Paypal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Имя на карте</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="Ivanitskiy Olexandr" required>
+                <small class="text-muted">Полное имя на карте латинскими буквами</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="3456 6789 7654 5670" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Истекает</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="05/23" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+             <class="mb-4">
+
+              <div class="row"> 
+              <br>
+              <button class="btn btn-lite btn-md btn-block" type="submit">Заказать</button>
+              </div>
+              </div>
+            </form> 
+           
+  </div>
+  </div>
+   
+  
+    <!-- 2 konteynera--> 
+  </div>
+</div>
+      
+   
+    <footer class="footer">
+      <h6> Mihaylovskaya© 2018  </h6>
+    </footer>
+     
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
